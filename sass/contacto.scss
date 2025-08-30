@@ -15,11 +15,13 @@
         margin: 2rem 0;
         font-weight: bold;
         font-family: $main-font;
+        font-size: 30px;
     }
     .form-wrapper {
         max-width: 600px;
         margin: 0 auto;
         font-family: $main-font;
+        color: $third;
         .btn {
             margin-bottom: 2rem;
         }

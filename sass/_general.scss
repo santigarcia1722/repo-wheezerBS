@@ -26,4 +26,36 @@ body {
     font-family: $title-font;
     margin: 1rem 0;
     }
+    .card-title {
+      font-family: $title-font;
+      color: $prim;
+    }
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    .card-img-top {
+        height: 200px;      /* Ajustá esta altura a tu gusto */
+        object-fit: cover;  /* Recorta la imagen para que no se deforme */
+        width: 100%;        /* Ocupa todo el ancho del contenedor */
+        display: block;
+    }
+    .card-img-top:hover {
+        transform: scale(1.1); /* Aumenta el tamaño un 10% */
+        transition: 2s;
+    }
+    small {
+        color: $sec;
+        font-weight: bold;
+        del {
+            color: black;
+        }
+    }
+    .card {
+        border: none;
+        background-color: $fifty;
+    }
+    .card-footer {
+        margin: 1.5rem 0;
+    }
+}
 }

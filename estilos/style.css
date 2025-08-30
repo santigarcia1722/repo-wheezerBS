@@ -27,6 +27,38 @@ body h2 {
   font-family: "Paytone One", sans-serif;
   margin: 1rem 0;
 }
+body .card-title {
+  font-family: "Paytone One", sans-serif;
+  color: #893302;
+}
+body .cards {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .cards .card-img-top {
+  height: 200px; /* Ajustá esta altura a tu gusto */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  display: block;
+}
+body .cards .card-img-top:hover {
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+  transition: 2s;
+}
+body .cards small {
+  color: #b1652b;
+  font-weight: bold;
+}
+body .cards small del {
+  color: black;
+}
+body .cards .card {
+  border: none;
+  background-color: #f3dcaf;
+}
+body .cards .card-footer {
+  margin: 1.5rem 0;
+}
 
 .mi-navbar {
   background-color: black;
@@ -55,35 +87,7 @@ body h2 {
   transition: 1s;
 }
 
-.favoritas {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.favoritas .card-img-top {
-  height: 200px; /* Ajustá esta altura a tu gusto */
-  object-fit: cover; /* Recorta la imagen para que no se deforme */
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  display: block;
-}
-.favoritas .card-img-top:hover {
-  transform: scale(1.1); /* Aumenta el tamaño un 10% */
-  transition: 2s;
-}
-.favoritas small {
-  color: #b1652b;
-  font-weight: bold;
-}
-.favoritas small del {
-  color: black;
-}
-.favoritas .card {
-  border: none;
-  background-color: #f3dcaf;
-}
-.favoritas .card-footer {
-  margin: 1.5rem 0;
-}
-
+/*----------------------------- NOSOTROS ------------------------- */
 .about-us {
   margin: 1rem 0;
 }
@@ -115,10 +119,7 @@ body h2 {
   font-family: "Paytone One", sans-serif;
 }
 
-.col-sm-4 {
-  margin-bottom: 2rem;
-}
-
+/*--------------------------- PEDIDOS -----------------------*/
 .titulo-pedidos {
   font-family: "Paytone One", sans-serif;
   color: #893302;
@@ -133,10 +134,25 @@ body h2 {
   margin-left: 2rem;
 }
 
-.descripcion {
-  margin-left: 2rem;
+/*---------------------------- INDEX ------------------------------*/
+.locales h3 {
+  color: #adac33;
+  font-family: "Patua One", serif;
+}
+.locales .card-body {
+  background-image: url(../medios/fondo3.jpg);
+}
+.locales .img-fav {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.locales .card-text {
+  font-weight: bold;
 }
 
+/*------------------------------------------------------------------*/
 footer {
   background-color: black;
   display: flex;
@@ -172,11 +188,13 @@ footer .link-footer:hover {
   margin: 2rem 0;
   font-weight: bold;
   font-family: "Patua One", serif;
+  font-size: 30px;
 }
 .contacto .form-wrapper {
   max-width: 600px;
   margin: 0 auto;
   font-family: "Patua One", serif;
+  color: #adac33;
 }
 .contacto .form-wrapper .btn {
   margin-bottom: 2rem;

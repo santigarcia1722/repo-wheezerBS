@@ -2,35 +2,7 @@
 @use 'fonts' as *;
 @use 'general';
 
-.favoritas {
-    max-width: 1200px;
-    margin: 0 auto;
-    .card-img-top {
-        height: 200px;      /* Ajustá esta altura a tu gusto */
-        object-fit: cover;  /* Recorta la imagen para que no se deforme */
-        width: 100%;        /* Ocupa todo el ancho del contenedor */
-        display: block;
-    }
-    .card-img-top:hover {
-        transform: scale(1.1); /* Aumenta el tamaño un 10% */
-        transition: 2s;
-    }
-    small {
-        color: $sec;
-        font-weight: bold;
-        del {
-            color: black;
-        }
-    }
-    .card {
-        border: none;
-        background-color: $fifty;
-    }
-    .card-footer {
-        margin: 1.5rem 0;
-    }
-}
-
+/*----------------------------- NOSOTROS ------------------------- */
 .about-us {
     margin: 1rem 0;
     h1 {
@@ -64,9 +36,7 @@
     }
 }
 
-.col-sm-4 {
-    margin-bottom: 2rem;
-}
+/*--------------------------- PEDIDOS -----------------------*/
 
 .titulo-pedidos {
     font-family: $title-font;
@@ -82,6 +52,25 @@
     margin-left: 2rem;
 }
 
-.descripcion {
-    margin-left: 2rem;
+/*---------------------------- INDEX ------------------------------*/
+
+.locales {
+    h3 {
+        color: $third;
+        font-family: $main-font;
+    }
+    .card-body {
+        background-image: url(../medios/fondo3.jpg);
+    }
+    .img-fav {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .card-text {
+        font-weight: bold;
+    }
 }
+
+/*------------------------------------------------------------------*/
