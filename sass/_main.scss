@@ -1,0 +1,87 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'general';
+
+.favoritas {
+    max-width: 1200px;
+    margin: 0 auto;
+    .card-img-top {
+        height: 200px;      /* Ajustá esta altura a tu gusto */
+        object-fit: cover;  /* Recorta la imagen para que no se deforme */
+        width: 100%;        /* Ocupa todo el ancho del contenedor */
+        display: block;
+    }
+    .card-img-top:hover {
+        transform: scale(1.1); /* Aumenta el tamaño un 10% */
+        transition: 2s;
+    }
+    small {
+        color: $sec;
+        font-weight: bold;
+        del {
+            color: black;
+        }
+    }
+    .card {
+        border: none;
+        background-color: $fifty;
+    }
+    .card-footer {
+        margin: 1.5rem 0;
+    }
+}
+
+.about-us {
+    margin: 1rem 0;
+    h1 {
+        color: $prim;
+        text-align: center;
+        font-weight: bold;
+        font-size: 80px;
+        font-family: $title-font;
+        margin: 1rem;
+    }
+}
+
+.our-burgers {
+    margin: 1rem 0;
+    h2 {
+        color: $third;
+        text-align: left;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: $title-font;
+    }
+}
+
+.proposito {
+    h2 {
+        color: $fourty;
+        text-align: right;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: $title-font;
+    }
+}
+
+.col-sm-4 {
+    margin-bottom: 2rem;
+}
+
+.titulo-pedidos {
+    font-family: $title-font;
+    color: $prim;
+    font-size: 60px;
+    margin-left: 2rem;
+}
+
+.subtitulos {
+    font-family: $title-font;
+    color: $sec;
+    font-size: 45px;
+    margin-left: 2rem;
+}
+
+.descripcion {
+    margin-left: 2rem;
+}

@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'general' as *;
+@use 'fonts' as *;
+
+.contacto {
+    h1 {
+        text-align: center;
+        color: $prim;
+        font-size: 50px;
+        font-family: $title-font;
+    }
+    h2 {
+        text-align: center;
+        color: $sec;
+        margin: 2rem 0;
+        font-weight: bold;
+        font-family: $main-font;
+    }
+    .form-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: $main-font;
+        .btn {
+            margin-bottom: 2rem;
+        }
+        .form-label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+
+}

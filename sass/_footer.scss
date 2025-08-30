@@ -1,0 +1,25 @@
+@use 'fonts' as *;
+@use 'variables' as *;
+
+footer {
+    background-color:black;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    img {
+        max-width: 180px;
+    }
+    li {
+        list-style: none;
+        margin: 1rem 0;
+    }
+    .link-footer {
+        text-decoration: none;
+        font-family: $main-font;
+        color: $fifty;
+        &:hover {
+            color: $fourty;
+            transition: 1s;
+        }
+    }
+}

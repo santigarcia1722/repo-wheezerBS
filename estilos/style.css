@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Paytone+One&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-family: "Patua One", serif;
+  font-size: 30rem;
+}
+body p {
+  text-align: justify;
+  font-size: 20px;
+  color: #b1652b;
+  font-family: "Patua One", serif;
+  margin-bottom: 2rem;
+}
+body h2 {
+  color: #893302;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Paytone One", sans-serif;
+  margin: 1rem 0;
+}
+
+.mi-navbar {
+  background-color: black;
+  width: 100%;
+}
+.mi-navbar .navbar-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.mi-navbar .img-nav {
+  height: auto;
+  max-width: 200px;
+  margin: 0.5rem;
+}
+.mi-navbar .img-nav:hover {
+  transform: rotate(360deg);
+  transition: 3s;
+}
+.mi-navbar .nav-link {
+  font-family: "Patua One", serif;
+  color: #f3dcaf;
+}
+.mi-navbar .nav-link:hover {
+  color: #fbc107;
+  transition: 1s;
+}
+
+.favoritas {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.favoritas .card-img-top {
+  height: 200px; /* Ajustá esta altura a tu gusto */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  display: block;
+}
+.favoritas .card-img-top:hover {
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+  transition: 2s;
+}
+.favoritas small {
+  color: #b1652b;
+  font-weight: bold;
+}
+.favoritas small del {
+  color: black;
+}
+.favoritas .card {
+  border: none;
+  background-color: #f3dcaf;
+}
+.favoritas .card-footer {
+  margin: 1.5rem 0;
+}
+
+.about-us {
+  margin: 1rem 0;
+}
+.about-us h1 {
+  color: #893302;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Paytone One", sans-serif;
+  margin: 1rem;
+}
+
+.our-burgers {
+  margin: 1rem 0;
+}
+.our-burgers h2 {
+  color: #adac33;
+  text-align: left;
+  font-weight: bold;
+  font-size: 65px;
+  font-family: "Paytone One", sans-serif;
+}
+
+.proposito h2 {
+  color: #fbc107;
+  text-align: right;
+  font-weight: bold;
+  font-size: 65px;
+  font-family: "Paytone One", sans-serif;
+}
+
+.col-sm-4 {
+  margin-bottom: 2rem;
+}
+
+.titulo-pedidos {
+  font-family: "Paytone One", sans-serif;
+  color: #893302;
+  font-size: 60px;
+  margin-left: 2rem;
+}
+
+.subtitulos {
+  font-family: "Paytone One", sans-serif;
+  color: #b1652b;
+  font-size: 45px;
+  margin-left: 2rem;
+}
+
+.descripcion {
+  margin-left: 2rem;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+footer img {
+  max-width: 180px;
+}
+footer li {
+  list-style: none;
+  margin: 1rem 0;
+}
+footer .link-footer {
+  text-decoration: none;
+  font-family: "Patua One", serif;
+  color: #f3dcaf;
+}
+footer .link-footer:hover {
+  color: #fbc107;
+  transition: 1s;
+}
+
+.contacto h1 {
+  text-align: center;
+  color: #893302;
+  font-size: 50px;
+  font-family: "Paytone One", sans-serif;
+}
+.contacto h2 {
+  text-align: center;
+  color: #b1652b;
+  margin: 2rem 0;
+  font-weight: bold;
+  font-family: "Patua One", serif;
+}
+.contacto .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Patua One", serif;
+}
+.contacto .form-wrapper .btn {
+  margin-bottom: 2rem;
+}
+.contacto .form-wrapper .form-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

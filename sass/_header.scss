@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'general';
+
+.mi-navbar {
+  background-color: black;
+  width: 100%;
+  .navbar-nav {
+    display: flex;
+    gap: 2rem; // espacio entre links
+    align-items: center;
+  }
+  .img-nav {
+    height: auto;
+    max-width: 200px;
+    margin: 0.5rem;
+  }
+  .img-nav:hover {
+    transform: rotate(360deg);
+    transition: 3s;
+  }
+  .nav-link {
+    font-family: $main-font;
+    color: $fifty;
+    &:hover {
+        color: $fourty;
+        transition: 1s;
+    }
+  }
+}
