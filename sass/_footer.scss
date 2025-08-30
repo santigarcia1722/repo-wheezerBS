@@ -2,24 +2,40 @@
 @use 'variables' as *;
 
 footer {
-    background-color:black;
+    background-color: black;
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-    img {
-        max-width: 180px;
+    font-family: $main-font;
+    color: $fifty;
+    font-size: 15px;
+    height: 150px;
+    .footer-izq {
+        img {
+            max-width: 250px;
+            padding: 20px;
+        }
     }
-    li {
-        list-style: none;
-        margin: 1rem 0;
+    .footer-centro {
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        .link-footer {
+            text-decoration: none;
+            color: $fifty;
+            gap: 20px;
+        }
     }
-    .link-footer {
-        text-decoration: none;
-        font-family: $main-font;
-        color: $fifty;
-        &:hover {
-            color: $fourty;
-            transition: 1s;
+    .footer-der {
+        a {
+            text-decoration: none;
+            color: $fifty;
+            font-size: 15px;
+            padding: 25px;
+            display: flex;
+            img {
+                max-width: 25px;
+            }
         }
     }
 }

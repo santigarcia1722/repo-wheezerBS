@@ -19,11 +19,19 @@ body p {
   font-family: "Patua One", serif;
   margin-bottom: 2rem;
 }
-body h2 {
+body h1 {
   color: #893302;
   text-align: center;
   font-weight: bold;
   font-size: 80px;
+  font-family: "Paytone One", sans-serif;
+  margin: 1rem 0;
+}
+body h2 {
+  color: #b1652b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
   font-family: "Paytone One", sans-serif;
   margin: 1rem 0;
 }
@@ -91,14 +99,6 @@ body .cards .card-footer {
 .about-us {
   margin: 1rem 0;
 }
-.about-us h1 {
-  color: #893302;
-  text-align: center;
-  font-weight: bold;
-  font-size: 80px;
-  font-family: "Paytone One", sans-serif;
-  margin: 1rem;
-}
 
 .our-burgers {
   margin: 1rem 0;
@@ -157,23 +157,33 @@ footer {
   background-color: black;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
-}
-footer img {
-  max-width: 180px;
-}
-footer li {
-  list-style: none;
-  margin: 1rem 0;
-}
-footer .link-footer {
-  text-decoration: none;
   font-family: "Patua One", serif;
   color: #f3dcaf;
+  font-size: 15px;
+  height: 150px;
 }
-footer .link-footer:hover {
-  color: #fbc107;
-  transition: 1s;
+footer .footer-izq img {
+  max-width: 250px;
+  padding: 20px;
+}
+footer .footer-centro ul {
+  list-style: none;
+  display: flex;
+}
+footer .footer-centro .link-footer {
+  text-decoration: none;
+  color: #f3dcaf;
+  gap: 20px;
+}
+footer .footer-der a {
+  text-decoration: none;
+  color: #f3dcaf;
+  font-size: 15px;
+  padding: 25px;
+  display: flex;
+}
+footer .footer-der a img {
+  max-width: 25px;
 }
 
 .contacto h1 {

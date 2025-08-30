@@ -18,11 +18,19 @@ body {
     font-family: $main-font;
     margin-bottom: 2rem;
   }
-  h2 {
+  h1 {
     color: $prim;
     text-align: center;
     font-weight: bold;
     font-size: 80px;
+    font-family: $title-font;
+    margin: 1rem 0;
+    }
+  h2 {
+    color: $sec;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
     font-family: $title-font;
     margin: 1rem 0;
     }
