@@ -40,7 +40,7 @@ body .card-title {
 }
 body .cards {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 body .cards .card-img-top {
   height: 200px; /* Ajustá esta altura a tu gusto */
@@ -62,9 +62,6 @@ body .cards small del {
 body .cards .card {
   border: none;
   background-color: #f3dcaf;
-}
-body .cards .card-footer {
-  margin: 1.5rem 0;
 }
 
 @media (max-width: 550px) {
@@ -112,6 +109,12 @@ body .cards .card-footer {
   transition: 1s;
 }
 
+@media (max-width: 850px) {
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+}
 /*----------------------------- NOSOTROS ------------------------- */
 .about-us {
   margin: 1rem 0;
@@ -171,38 +174,47 @@ body .cards .card-footer {
 
 /*------------------------------------------------------------------*/
 footer {
-  background-color: black;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-family: "Patua One", serif;
+  background-color: black;
   color: #f3dcaf;
-  font-size: 15px;
-  height: 150px;
 }
 footer .footer-izq img {
   max-width: 250px;
-  padding: 20px;
 }
-footer .footer-centro ul {
-  list-style: none;
+footer .footer-der {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Patua One", serif;
 }
-footer .footer-centro .link-footer {
+footer .footer-der nav {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-centro a {
   text-decoration: none;
   color: #f3dcaf;
-  gap: 20px;
-}
-footer .footer-der a {
-  text-decoration: none;
-  color: #f3dcaf;
-  font-size: 15px;
-  padding: 25px;
-  display: flex;
-}
-footer .footer-der a img {
-  max-width: 25px;
+  font-family: "Patua One", serif;
+  margin: 1rem;
 }
 
+@media (max-width: 800px) {
+  footer .footer-izq img {
+    max-width: 100px;
+  }
+  footer .footer-der {
+    font-size: 12px;
+  }
+  footer .footer-centro nav {
+    flex-direction: column;
+  }
+  footer .footer-centro a {
+    font-size: 10px;
+    margin: 0.5rem;
+  }
+}
 .contacto h1 {
   text-align: center;
   color: #893302;

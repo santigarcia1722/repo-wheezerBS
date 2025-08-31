@@ -1,40 +1,55 @@
 @use 'fonts' as *;
 @use 'variables' as *;
 
+
 footer {
-    background-color: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-family: $main-font;
+    background-color: black;
     color: $fifty;
-    font-size: 15px;
-    height: 150px;
     .footer-izq {
         img {
-            max-width: 250px;
-            padding: 20px;
-        }
-    }
-    .footer-centro {
-        ul {
-            list-style: none;
-            display: flex;
-        }
-        .link-footer {
-            text-decoration: none;
-            color: $fifty;
-            gap: 20px;
+        max-width: 250px;
         }
     }
     .footer-der {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: $main-font;
+        nav {
+        display: flex;
+        justify-content: space-between;
+        }
+    }
+    .footer-centro {
         a {
-            text-decoration: none;
-            color: $fifty;
-            font-size: 15px;
-            padding: 25px;
-            display: flex;
+        text-decoration: none;
+        color: $fifty;
+        font-family: $main-font;
+        margin: 1rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        .footer-izq {
             img {
-                max-width: 25px;
+                max-width: 100px;
+            }
+        }
+        .footer-der {
+            font-size: 12px;
+        }
+        .footer-centro {
+            nav {
+                flex-direction: column;
+            }
+            a {
+                font-size: 10px;
+                margin: 0.5rem;
             }
         }
     }

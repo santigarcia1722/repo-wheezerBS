@@ -39,7 +39,7 @@ body {
     }
   .cards {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto;
     .card-img-top {
         height: 200px;      /* Ajustá esta altura a tu gusto */
         object-fit: cover;  /* Recorta la imagen para que no se deforme */
@@ -60,9 +60,6 @@ body {
     .card {
         border: none;
         background-color: $fifty;
-    }
-    .card-footer {
-        margin: 1.5rem 0;
     }
 }
 }

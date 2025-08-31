@@ -28,3 +28,10 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+}
