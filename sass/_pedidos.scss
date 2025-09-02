@@ -1,0 +1,22 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'general';
+
+/*--------------------------- PEDIDOS -----------------------*/
+.h1-pedidos {
+    display: none;
+}
+
+.titulo-pedidos {
+    font-family: $title-font;
+    color: $prim;
+    font-size: 60px;
+    margin-left: 2rem;
+}
+
+.subtitulos {
+    font-family: $title-font;
+    color: $sec;
+    font-size: 45px;
+    margin-left: 2rem;
+}

@@ -140,6 +140,10 @@ body .cards .card {
 }
 
 /*--------------------------- PEDIDOS -----------------------*/
+.h1-pedidos {
+  display: none;
+}
+
 .titulo-pedidos {
   font-family: "Paytone One", sans-serif;
   color: #893302;
@@ -172,7 +176,6 @@ body .cards .card {
   font-weight: bold;
 }
 
-/*------------------------------------------------------------------*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -215,6 +218,20 @@ footer .footer-centro a {
     margin: 0.5rem;
   }
 }
+.form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Patua One", serif;
+  color: black;
+}
+.form-wrapper .btn {
+  margin-bottom: 2rem;
+}
+.form-wrapper .form-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .contacto h1 {
   text-align: center;
   color: #893302;
@@ -229,18 +246,20 @@ footer .footer-centro a {
   font-family: "Patua One", serif;
   font-size: 30px;
 }
-.contacto .form-wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: "Patua One", serif;
+
+.work-with-us {
+  background-image: url(../medios/backgroundcontacto.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.work-with-us h2 {
+  color: #f3dcaf;
+  font-size: 40px;
+}
+.work-with-us P {
+  text-align: center;
   color: #adac33;
-}
-.contacto .form-wrapper .btn {
-  margin-bottom: 2rem;
-}
-.contacto .form-wrapper .form-label {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

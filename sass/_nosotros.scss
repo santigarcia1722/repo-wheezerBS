@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'general';
+
+/*----------------------------- NOSOTROS ------------------------- */
+.about-us {
+    margin: 1rem 0;
+}
+
+.our-burgers {
+    margin: 1rem 0;
+    h2 {
+        color: $third;
+        text-align: left;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: $title-font;
+    }
+}
+
+.proposito {
+    h2 {
+        color: $fourty;
+        text-align: right;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: $title-font;
+    }
+}
