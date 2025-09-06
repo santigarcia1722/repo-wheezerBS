@@ -10,77 +10,103 @@
 
 body {
   font-family: $main-font;
-  p {
-    text-align: justify;
-    font-size: 20px;
-    color: $sec;
-    font-family: $main-font;
-    margin-bottom: 2rem;
-  }
-  h1 {
-    color: $prim;
-    text-align: center;
-    font-weight: bold;
-    font-size: 80px;
-    font-family: $title-font;
-    margin: 1rem 0;
-    }
-  h2 {
-    color: $sec;
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    font-family: $title-font;
-    margin: 1rem 0;
-    }
-    .card-title {
-      font-family: $title-font;
-      color: $prim;
-    }
-  .cards {
-    max-width: 1200px;
-    margin: 1rem auto;
-    .card-img-top {
-        height: 200px;      /* Ajustá esta altura a tu gusto */
-        object-fit: cover;  /* Recorta la imagen para que no se deforme */
-        width: 100%;        /* Ocupa todo el ancho del contenedor */
-        display: block;
-    }
-    .card-img-top:hover {
-        transform: scale(1.1); /* Aumenta el tamaño un 10% */
-        transition: 2s;
-    }
-    small {
-        color: $sec;
-        font-weight: bold;
-        del {
-            color: black;
-        }
-    }
-    .card {
-        border: none;
-        background-color: $fifty;
-    }
-}
 }
 
+.titulo-principal {     /*h1*/
+  color: $prim;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: $title-font;
+  margin: 1rem 0;
+}
+
+.titulos-sec {        /*h2*/
+  color: $sec;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: $title-font;
+  margin: 1rem 0;
+}
+
+p {           
+  text-align: justify;
+  font-size: 20px;
+  color: $sec;
+  font-family: $main-font;
+  margin-bottom: 2rem;
+}
+.card-title {
+  font-family: $title-font;
+  color: $prim;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 1rem auto;
+  .card-img-top {
+    height: 200px;      /* Ajustá esta altura a tu gusto */
+    object-fit: cover;  /* Recorta la imagen para que no se deforme */
+    width: 100%;        /* Ocupa todo el ancho del contenedor */
+    display: block;
+  }
+  .card-img-top:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+    transition: 2s;
+  }
+  small {
+    color: $sec;
+    font-weight: bold;
+      del {
+        color: black;
+      }
+  }
+  .card {
+    border: none;
+    background-color: $fifty;
+  }
+}
+
+/*----------------MEDIA QUERY----------------*/
+
 @media (max-width: 550px) {
-  body {
-    p {
-      font-size: 15px;
-      margin: 1rem auto;
-      text-align: center;
-    }
-    h1 {
-      font-size: 35px;
-    }
-    .titulo-pedidos {
-      font-size: 30px;
-      margin: 1rem auto;
-    }
-    .subtitulos {
-      font-size: 25px;
-      margin: 1rem auto;
+  p {
+    font-size: 15px;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .titulo-principal {
+    font-size: 35px;
+  }
+
+  .titulos-sec {
+    font-size: 25px;
+  }
+
+  .titulo-pedidos {
+    font-size: 30px;
+    margin: 1rem auto;
+  }
+
+  .subtitulos {
+    font-size: 25px;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  .cards {
+    .card {
+      margin-left: 0.7rem;
     }
   }
 }

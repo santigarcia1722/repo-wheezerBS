@@ -11,14 +11,8 @@
 body {
   font-family: "Patua One", serif;
 }
-body p {
-  text-align: justify;
-  font-size: 20px;
-  color: #b1652b;
-  font-family: "Patua One", serif;
-  margin-bottom: 2rem;
-}
-body h1 {
+
+.titulo-principal, .contacto .titulo-contacto, .about-us .titulo-nosotros { /*h1*/
   color: #893302;
   text-align: center;
   font-weight: bold;
@@ -26,7 +20,8 @@ body h1 {
   font-family: "Paytone One", sans-serif;
   margin: 1rem 0;
 }
-body h2 {
+
+.titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos, .our-burgers .sub-nosotros, .proposito .sub-nosotros { /*h2*/
   color: #b1652b;
   text-align: center;
   font-weight: bold;
@@ -34,52 +29,76 @@ body h2 {
   font-family: "Paytone One", sans-serif;
   margin: 1rem 0;
 }
-body .card-title {
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  color: #b1652b;
+  font-family: "Patua One", serif;
+  margin-bottom: 2rem;
+}
+
+.card-title {
   font-family: "Paytone One", sans-serif;
   color: #893302;
 }
-body .cards {
+
+.cards {
   max-width: 1200px;
   margin: 1rem auto;
 }
-body .cards .card-img-top {
+.cards .card-img-top {
   height: 200px; /* Ajustá esta altura a tu gusto */
   object-fit: cover; /* Recorta la imagen para que no se deforme */
   width: 100%; /* Ocupa todo el ancho del contenedor */
   display: block;
 }
-body .cards .card-img-top:hover {
+.cards .card-img-top:hover {
   transform: scale(1.1); /* Aumenta el tamaño un 10% */
   transition: 2s;
 }
-body .cards small {
+.cards small {
   color: #b1652b;
   font-weight: bold;
 }
-body .cards small del {
+.cards small del {
   color: black;
 }
-body .cards .card {
+.cards .card {
   border: none;
   background-color: #f3dcaf;
 }
 
+/*----------------MEDIA QUERY----------------*/
 @media (max-width: 550px) {
-  body p {
+  p {
     font-size: 15px;
     margin: 1rem auto;
     text-align: center;
   }
-  body h1 {
+  h3 {
+    text-align: center;
+  }
+  .titulo-principal, .contacto .titulo-contacto, .about-us .titulo-nosotros {
     font-size: 35px;
   }
-  body .titulo-pedidos {
+  .titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos, .our-burgers .sub-nosotros, .proposito .sub-nosotros {
+    font-size: 25px;
+  }
+  .titulo-pedidos {
     font-size: 30px;
     margin: 1rem auto;
   }
-  body .subtitulos {
+  .subtitulos {
     font-size: 25px;
-    margin: 1rem auto;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .cards .card {
+    margin-left: 0.7rem;
   }
 }
 .mi-navbar {
@@ -119,43 +138,45 @@ body .cards .card {
 .about-us {
   margin: 1rem 0;
 }
+.about-us .titulo-nosotros {
+  color: #b1652b;
+}
 
 .our-burgers {
   margin: 1rem 0;
 }
-.our-burgers h2 {
+.our-burgers .sub-nosotros {
   color: #adac33;
   text-align: left;
-  font-weight: bold;
   font-size: 65px;
-  font-family: "Paytone One", sans-serif;
 }
 
-.proposito h2 {
+.proposito .sub-nosotros {
   color: #fbc107;
   text-align: right;
-  font-weight: bold;
   font-size: 65px;
-  font-family: "Paytone One", sans-serif;
 }
 
-/*--------------------------- PEDIDOS -----------------------*/
+@media (max-width: 550px) {
+  .our-burgers .sub-nosotros {
+    font-size: 25px;
+    text-align: center;
+  }
+  .proposito .sub-nosotros {
+    font-size: 25px;
+    text-align: center;
+  }
+}
 .h1-pedidos {
-  display: none;
+  display: none; /* Seccion sin titulo principal */
 }
 
 .titulo-pedidos {
-  font-family: "Paytone One", sans-serif;
   color: #893302;
-  font-size: 60px;
-  margin-left: 2rem;
 }
 
 .subtitulos {
-  font-family: "Paytone One", sans-serif;
-  color: #b1652b;
   font-size: 45px;
-  margin-left: 2rem;
 }
 
 /*---------------------------- INDEX ------------------------------*/
@@ -176,6 +197,11 @@ body .cards .card {
   font-weight: bold;
 }
 
+@media (max-width: 550px) {
+  .locales .card {
+    margin-left: 0.7rem;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -208,14 +234,16 @@ footer .footer-centro a {
     max-width: 100px;
   }
   footer .footer-der {
-    font-size: 12px;
+    font-size: 10px;
   }
   footer .footer-centro nav {
+    display: flex;
+    text-align: center;
     flex-direction: column;
   }
   footer .footer-centro a {
     font-size: 10px;
-    margin: 0.5rem;
+    margin: 0.2rem;
   }
 }
 .form-wrapper {
@@ -232,18 +260,11 @@ footer .footer-centro a {
   font-size: 20px;
 }
 
-.contacto h1 {
-  text-align: center;
-  color: #893302;
+.contacto .titulo-contacto {
   font-size: 50px;
-  font-family: "Paytone One", sans-serif;
 }
-.contacto h2 {
-  text-align: center;
-  color: #b1652b;
+.contacto .sub-contacto {
   margin: 2rem 0;
-  font-weight: bold;
-  font-family: "Patua One", serif;
   font-size: 30px;
 }
 
@@ -253,13 +274,28 @@ footer .footer-centro a {
   background-repeat: no-repeat;
   width: 100%;
 }
-.work-with-us h2 {
+.work-with-us .sub-contacto {
   color: #f3dcaf;
   font-size: 40px;
 }
 .work-with-us P {
   text-align: center;
   color: #adac33;
+}
+
+@media (max-width: 550px) {
+  .contacto .titulo-contacto {
+    font-size: 30px;
+  }
+  .contacto .sub-contacto {
+    font-size: 20px;
+  }
+  .work-with-us {
+    background-image: url(../medios/bgcel.webp);
+  }
+  .work-with-us .sub-contacto {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

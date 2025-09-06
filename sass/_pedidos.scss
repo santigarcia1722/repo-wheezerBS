@@ -2,21 +2,16 @@
 @use 'fonts' as *;
 @use 'general';
 
-/*--------------------------- PEDIDOS -----------------------*/
 .h1-pedidos {
-    display: none;
+    display: none;              /* Seccion sin titulo principal */
 }
 
 .titulo-pedidos {
-    font-family: $title-font;
+    @extend .titulos-sec;
     color: $prim;
-    font-size: 60px;
-    margin-left: 2rem;
 }
 
 .subtitulos {
-    font-family: $title-font;
-    color: $sec;
+    @extend .titulos-sec;
     font-size: 45px;
-    margin-left: 2rem;
 }

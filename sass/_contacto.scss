@@ -17,18 +17,13 @@
 }
 
 .contacto {
-    h1 {
-        text-align: center;
-        color: $prim;
+    .titulo-contacto {
+        @extend .titulo-principal;
         font-size: 50px;
-        font-family: $title-font;
     }
-    h2 {
-        text-align: center;
-        color: $sec;
+    .sub-contacto {
+        @extend .titulos-sec;
         margin: 2rem 0;
-        font-weight: bold;
-        font-family: $main-font;
         font-size: 30px;
     }
 }
@@ -38,12 +33,30 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    h2 {
+    .sub-contacto {
+        @extend .titulos-sec;
         color: $fifty;
         font-size: 40px;
     }
     P {
         text-align: center;
         color: $third;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacto {
+        .titulo-contacto {
+            font-size: 30px;
+        }
+        .sub-contacto {
+            font-size: 20px;
+        }
+    }
+    .work-with-us {
+        background-image: url(../medios/bgcel.webp);
+        .sub-contacto {
+            font-size: 30px;
+        }
     }
 }

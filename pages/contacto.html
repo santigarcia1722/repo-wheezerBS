@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WBS - CONTACTO</title>
+    <meta name="description" content="Contactate con nosotros ante cualquier inquietud. Dejanos tu CV para unirte a la familia Wheezer.">
+    <!-- LINKS -->
     <link rel="icon" href="../medios/icono.png">
     <link rel="stylesheet" href="../estilos/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg mi-navbar">
+    <nav class="navbar navbar-expand-lg mi-navbar navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="../index.html">
         <img src="../medios/icono.png" alt="WBS" class="img-nav">
@@ -23,7 +25,7 @@
         <div class="navbar-nav w-100 justify-content-end">
             <a class="nav-link" href="./pedidos.html">Hacé tu pedido</a>
             <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
         </div>
         </div>
     </div>
@@ -31,91 +33,91 @@
     </header>
 
 <main>
-  <section class="contacto">
-    <h1>TU OPINIÓN NOS IMPORTA</h1>
-    <h2>Comunícate con nosotros. Estaremos en contacto lo más pronto posible</h2>
+    <section class="contacto">
+      <h1 class="titulo-contacto">TU OPINIÓN NOS IMPORTA</h1>
+      <h2 class="sub-contacto">Comunícate con nosotros. Estaremos en contacto lo más pronto posible</h2>
 
-    <div class="form-wrapper">
+      <div class="form-wrapper">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono">
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Déjanos aquí tu consulta..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-centrado">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="work-with-us">
+      <h2 class="sub-contacto">SUMATE A NUESTRO EQUIPO</h2>
+      <p>Únete a nuestro equipo y crece profesionalmente en un ambiente dinámico y amigable.</p>
+      <div class="form-wrapper">
       <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
 
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="correo" placeholder="name@example.com">
-        </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+          </div>
 
-        <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono</label>
-          <input type="tel" class="form-control" id="telefono">
-        </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono">
+          </div>
 
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" placeholder="Déjanos aquí tu consulta..."></textarea>
-        </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Déjanos aquí tu consulta..."></textarea>
+          </div>
 
-        <button type="submit" class="btn btn-primary btn-centrado">Enviar</button>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Adjunta tu CV</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-centrado">Enviar</button>
       </form>
-    </div>
-  </section>
-
-  <section class="work-with-us">
-    <h2>SUMATE A NUESTRO EQUIPO</h2>
-    <p>Únete a nuestro equipo y crece profesionalmente en un ambiente dinámico y amigable.</p>
-    <div class="form-wrapper">
-    <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="correo" placeholder="name@example.com">
-        </div>
-
-        <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono</label>
-          <input type="tel" class="form-control" id="telefono">
-        </div>
-
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" placeholder="Déjanos aquí tu consulta..."></textarea>
-        </div>
-
-        <div class="mb-3">
-          <label for="formFile" class="form-label">Adjunta tu CV</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-centrado">Enviar</button>
-    </form>
-    </div>
-  </section>
-</main>
+      </div>
+    </section>
 
 <footer>
-  <div class="footer-izq">
-    <img src="../medios/icono.png" alt="Logo">
-  </div>
+    <div class="footer-izq">
+      <img src="../medios/icono.png" alt="Logo">
+    </div>
 
-  <div class="footer-centro">
-    <nav>
-      <a href="./pedidos.html">Pedidos</a>
-      <a href="./nosotros.html">Nosotros</a>
-      <a href="./contacto.html">Contacto</a>
-    </nav>
-  </div>
+    <div class="footer-centro">
+      <nav>
+        <a href="./pedidos.html">Pedidos</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+    </div>
 
-  <div class="footer-der">
-    <span class="tel">+598 98 123 456</span>
-    <span class="pais">Montevideo, Uruguay</span>
-  </div>
+    <div class="footer-der">
+      <span class="tel">+598 98 123 456</span>
+      <span class="pais">Montevideo, Uruguay</span>
+    </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

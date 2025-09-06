@@ -22,3 +22,11 @@
         font-weight: bold;
     }
 }
+
+@media (max-width: 550px) {
+    .locales {
+        .card {
+            margin-left: 0.7rem;
+        }
+    }
+}
