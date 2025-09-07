@@ -10,7 +10,8 @@
         font-family: $main-font;
     }
     .card-body {
-        background-image: url(../medios/fondo3.jpg);
+        background-image: url(../medios/bglocal.webp);
+        height: 100%;
     }
     .img-fav {
         height: 100%;
@@ -23,7 +24,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
     .locales {
         .card {
             margin-left: 0.7rem;
