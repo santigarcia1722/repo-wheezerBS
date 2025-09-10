@@ -26,6 +26,9 @@
         margin: 2rem 0;
         font-size: 30px;
     }
+    p {
+        text-align: center;
+    }
 }
 
 .work-with-us {
@@ -44,19 +47,38 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contacto {
         .titulo-contacto {
             font-size: 30px;
+            padding: 1rem;
         }
         .sub-contacto {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
     .work-with-us {
-        background-image: url(../medios/bgcel.webp);
+        background-image: url(../medios/mobileback.jpg);
+        background-repeat: repeat;
         .sub-contacto {
-            font-size: 30px;
+            font-size: 25px;
+            color: $prim;
+            padding: 1rem;
+        }
+        p {
+            color: black;
+        }
+    }
+    .form-wrapper {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .contacto {
+        p {
+            text-align: center;
+            font-weight: bold;
         }
     }
 }

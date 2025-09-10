@@ -43,14 +43,14 @@ p {
   color: #893302;
 }
 
-.cards {
+.cards { /* Sección hamburguesas de Index y pedidos */
   max-width: 1200px;
   margin: 1rem auto;
 }
 .cards .card-img-top {
-  height: 200px; /* Ajustá esta altura a tu gusto */
+  height: 200px;
   object-fit: cover; /* Recorta la imagen para que no se deforme */
-  width: 100%; /* Ocupa todo el ancho del contenedor */
+  width: 100%;
   display: block;
 }
 .cards .card-img-top:hover {
@@ -128,7 +128,7 @@ p {
   transition: 1s;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 913px) {
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -268,6 +268,9 @@ footer .footer-centro a {
   margin: 2rem 0;
   font-size: 30px;
 }
+.contacto p {
+  text-align: center;
+}
 
 .work-with-us {
   background-image: url(../medios/backgroundcontacto.png);
@@ -284,18 +287,34 @@ footer .footer-centro a {
   color: #adac33;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contacto .titulo-contacto {
     font-size: 30px;
+    padding: 1rem;
   }
   .contacto .sub-contacto {
-    font-size: 20px;
+    font-size: 15px;
   }
   .work-with-us {
-    background-image: url(../medios/bgcel.webp);
+    background-image: url(../medios/mobileback.jpg);
+    background-repeat: repeat;
   }
   .work-with-us .sub-contacto {
-    font-size: 30px;
+    font-size: 25px;
+    color: #893302;
+    padding: 1rem;
+  }
+  .work-with-us p {
+    color: black;
+  }
+  .form-wrapper {
+    max-width: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+  .contacto p {
+    text-align: center;
+    font-weight: bold;
   }
 }
 
