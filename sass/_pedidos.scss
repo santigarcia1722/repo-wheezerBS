@@ -15,3 +15,16 @@
     @extend .titulos-sec;
     font-size: 45px;
 }
+
+@media (max-width: 767px) {
+    .titulo-pedidos {
+        font-size: 30px;
+        margin: 1rem auto;
+    }
+
+    .subtitulos {
+        font-size: 25px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
