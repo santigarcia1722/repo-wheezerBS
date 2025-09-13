@@ -24,10 +24,41 @@
     }
 }
 
+.buenos-aires {
+    background-image: url(../medios/bsas.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 70vh;
+    background-attachment: fixed;
+    filter: brightness(60%);
+    .titulos-sec {
+        color: white;
+    }
+}
+
 @media (max-width: 768px) {
     .locales {
         .card {
             margin-left: 0.7rem;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+    .buenos-aires {
+        min-height: 50vh;
+        background-position: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .locales {
+        h3 {
+            text-align: center;
+            font-size: 25px;
+        }
+        p {
+            font-size: 20px;
         }
     }
 }
