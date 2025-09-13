@@ -33,15 +33,16 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     footer {
+        min-height: 8vh;
         .footer-izq {
             img {
-                max-width: 100px;
+                max-width: 150px;
             }
         }
         .footer-der {
-            font-size: 10px;
+            font-size: 15px;
         }
         .footer-centro {
             nav {
@@ -50,7 +51,7 @@ footer {
                 flex-direction: column;
             }
             a {
-                font-size: 10px;
+                font-size: 15px;
                 margin: 0.2rem;
             }
         }

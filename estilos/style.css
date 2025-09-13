@@ -280,12 +280,15 @@ footer .footer-centro a {
   margin: 1rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
+  footer {
+    min-height: 8vh;
+  }
   footer .footer-izq img {
-    max-width: 100px;
+    max-width: 150px;
   }
   footer .footer-der {
-    font-size: 10px;
+    font-size: 15px;
   }
   footer .footer-centro nav {
     display: flex;
@@ -293,7 +296,7 @@ footer .footer-centro a {
     flex-direction: column;
   }
   footer .footer-centro a {
-    font-size: 10px;
+    font-size: 15px;
     margin: 0.2rem;
   }
 }
