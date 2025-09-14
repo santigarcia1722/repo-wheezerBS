@@ -21,7 +21,7 @@ body {
   margin: 1rem 0;
 }
 
-.titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos, .our-burgers .sub-nosotros, .proposito .sub-nosotros { /*h2*/
+.titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos { /*h2*/
   color: #b1652b;
   text-align: center;
   font-weight: bold;
@@ -82,7 +82,7 @@ p {
   .titulo-principal, .contacto .titulo-contacto, .about-us .titulo-nosotros {
     font-size: 35px;
   }
-  .titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos, .our-burgers .sub-nosotros, .proposito .sub-nosotros {
+  .titulos-sec, .contacto .sub-contacto, .work-with-us .sub-contacto, .titulo-pedidos, .subtitulos {
     font-size: 25px;
   }
   .card-title {
@@ -147,35 +147,81 @@ p {
 }
 /*----------------------------- NOSOTROS ------------------------- */
 .about-us {
-  margin: 1rem 0;
+  background-image: url(../medios/wallpaper4.jpg);
+  background-position: center;
 }
 .about-us .titulo-nosotros {
-  color: #b1652b;
+  margin-top: 0;
+}
+.about-us h3 {
+  font-family: "Paytone One", sans-serif;
+  color: #adac33;
+  padding: 1rem;
+}
+.about-us p {
+  text-align: justify;
+  margin: 1rem;
+}
+.about-us img {
+  max-width: 500px;
+}
+.about-us img:hover {
+  transform: rotate(360deg);
+  transition: 5s;
 }
 
 .our-burgers {
-  margin: 1rem 0;
+  transition: 4s;
+  background-image: url(../medios/wallpaper6.jpg);
+  background-position: top;
+  filter: brightness(60%);
 }
-.our-burgers .sub-nosotros {
+.our-burgers .titulos-sec {
+  margin-top: 0;
+}
+.our-burgers p {
+  color: white;
+}
+.our-burgers img {
+  max-width: 400px;
+  transform: rotate(5deg);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.proposito {
+  background-image: url(../medios/wp7.jpg);
+  background-position: bottom;
+}
+.proposito .titulos-sec {
+  margin-top: 0;
   color: #adac33;
-  text-align: left;
-  font-size: 65px;
+}
+.proposito p {
+  margin: 1rem;
+  color: #f3dcaf;
+}
+.proposito img {
+  max-width: 300px;
+  transform: rotate(-5deg);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.proposito img:hover {
+  transform: rotate(720deg);
+  transition: 10s;
 }
 
-.proposito .sub-nosotros {
-  color: #fbc107;
-  text-align: right;
-  font-size: 65px;
-}
-
-@media (max-width: 768px) {
-  .our-burgers .sub-nosotros {
-    font-size: 25px;
-    text-align: center;
+@media (max-width: 767px) {
+  .our-burgers p {
+    margin: 1rem;
   }
-  .proposito .sub-nosotros {
-    font-size: 25px;
-    text-align: center;
+  .our-burgers img {
+    max-width: 250px;
+    margin-top: 1rem;
+  }
+  .proposito img {
+    max-width: 250px;
   }
 }
 .h1-pedidos {

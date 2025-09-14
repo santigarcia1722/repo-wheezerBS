@@ -4,43 +4,85 @@
 
 /*----------------------------- NOSOTROS ------------------------- */
 .about-us {
-    margin: 1rem 0;
+    background-image: url(../medios/wallpaper4.jpg);
+    background-position: center;
     .titulo-nosotros {
         @extend .titulo-principal;
-        color: $sec;
+        margin-top: 0;
+    }
+    h3 {
+        font-family: $title-font;
+        color: $third;
+        padding: 1rem;
+    }
+    p {
+        text-align: justify;
+        margin: 1rem;
+    }
+    img {
+        max-width: 500px;
+    }    
+    img:hover {
+        transform: rotate(360deg);
+        transition: 5s;
     }
 }
 
 .our-burgers {
-    margin: 1rem 0;
-    .sub-nosotros {
-        @extend .titulos-sec;
-        color: $third;
-        text-align: left;
-        font-size: 65px;
+    transition: 4s;
+    background-image: url(../medios/wallpaper6.jpg);
+    background-position: top;
+    filter: brightness(60%);
+    .titulos-sec {
+        margin-top: 0;
+    }
+    p {
+        color: white;
+    }
+    img {
+        max-width: 400px;
+        transform: rotate(5deg);
+        margin-bottom: 2rem;
+        border-radius: 10px;
     }
 }
 
 .proposito {
-    .sub-nosotros {
-        @extend .titulos-sec;
-        color: $fourty;
-        text-align: right;
-        font-size: 65px;
+    background-image: url(../medios/wp7.jpg);
+    background-position: bottom;
+    .titulos-sec {
+        margin-top: 0;
+        color: $third;
+    }
+    p {
+        margin: 1rem;
+        color: $fifty;
+    }
+    img {
+        max-width: 300px;
+        transform: rotate(-5deg);
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    img:hover {
+        transform: rotate(720deg);
+        transition: 10s;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .our-burgers {
-        .sub-nosotros {
-            font-size: 25px;
-            text-align: center;
+        p {
+            margin: 1rem;
+        }
+        img {
+            max-width: 250px;
+            margin-top: 1rem;
         }
     }
     .proposito {
-        .sub-nosotros {
-            font-size: 25px;
-            text-align: center;
+        img {
+            max-width: 250px;
         }
     }
 }
